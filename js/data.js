@@ -9,8 +9,8 @@ var project = {
     "name": "PNC Building Portfolio Utility Report",
     "desc": "energy benchmarking data analysis and infographics",
     "thumb": "design/thumb_pnc.png",
-    "images": ["design/pnc_1.jpg","design/pnc_2.jpg","design/pnc_3.jpg","design/pnc_4.jpg","design/pnc_5.jpg","design/pnc_6.png","design/pnc_7.png"],
-    "captions":["image","image2","image3"]
+    "images": ["design/pnc.png","design/pnc_1.jpg","design/pnc_2.jpg","design/pnc_3.jpg","design/pnc_4.jpg","design/pnc_5.jpg","design/pnc_6.png","design/pnc_7.png"],
+    "captions":["image","image2","image3","image","image2","image3","image","image2"]
   },{
     "name": "City of Pittsburgh Utility App",
     "desc": "web interface built on DOE's SEED platform",
