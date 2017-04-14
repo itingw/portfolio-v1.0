@@ -10,8 +10,10 @@
   <link rel="stylesheet"  href="css/responsive.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-
+  <script src="js/jQuery.js"></script>
 </head>
+
+
 
 <body>
   <div class ="container">
@@ -45,71 +47,13 @@
     </section>
 
     <section class ="row" id= "projects">
-      <div class="col-4 featthumbs">
-        <ul class="sliding effect">
-          <li class = "zero">
-             <h2 class="zero">BuildFIT Marketing & Interface</h2>
-             <p class="zero">brand design and user interface development</p>
-          </li>
-          <li><img class="projimg top" src="design/thumb_buildfit.png" alt="buildfit image" onclick="openModal();" class="hover-shadow"></li>
-        </ul>
-      </div>
-      <div class="col-4 featthumbs">
-        <ul class="sliding effect">
-          <li class = "zero">
-             <h2 class="zero">PNC Building Portfolio Utility Report</h2>
-             <p class="zero">energy benchmarking data analysis and infographics</p>
-          </li>
-          <li><img class="projimg top" src="design/thumb_pnc.png" alt="" onclick="openModal();" class="hover-shadow"></li>
-        </ul>
-      </div>
-      <div class="col-4 featthumbs">
-        <ul class="sliding effect">
-          <li class = "zero">
-             <h2 class="zero">City of Pittsburgh Utility App</h2>
-             <p class="zero">web interface built on DOE's SEED platform</p>
-          </li>
-          <li><img class="projimg top" src="design/thumb_pitts2.png" alt="" onclick="openModal();" class="hover-shadow"></li>
-        </ul>
-      </div>
-      <div class="col-4 featthumbs">
-        <ul class="sliding effect">
-          <li class = "zero">
-             <h2 class="zero">Poster Design</h2>
-             <p class="zero">designs for School of Architecture events</p>
-          </li>
-          <li><img class="projimg top" src="design/thumb_poster.png" alt="" onclick="openModal();" class="hover-shadow"></li>
-        </ul>
-      </div>
-      <div class="col-4 featthumbs">
-        <ul class="sliding effect">
-          <li class = "zero">
-             <h2 class="zero">Hand Drawing</h2>
-             <p class="zero">perspective drawing, architectural diagrams, anatomy</p>
-          </li>
-          <li><img class="projimg top" src="design/thumb_draw.png" alt="" onclick="openModal();" class="hover-shadow"></li>
-        </ul>
-      </div>
-      <div class="col-4 featthumbs">
-        <ul class="sliding effect">
-          <li class = "zero">
-             <h2 class="zero">Architectural Design</h2>
-             <p class="zero">sustainable design, design-build</p>
-          </li>
-          <li><img class="projimg top" src="design/thumb_arch.png" alt="" onclick="openModal();" class="hover-shadow"></li>
-        </ul>
-      </div>
-
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-          <h2> Content coming soon! </h2>
-        </div>
-      </div>
-
 
     </section>
+
+    <script src="js/helper.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/modal.js"></script>
+    
   <script>
     /*
      * Open the drawer when the menu icon is clicked.
@@ -117,7 +61,6 @@
     var menu = document.querySelector('#menu');
     var main = document.querySelector('main');
     var drawer = document.querySelector('.nav');
-    console.log(menu);
     menu.addEventListener('click', function(e) {
       drawer.classList.toggle('open');
       e.stopPropagation();

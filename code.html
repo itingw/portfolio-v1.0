@@ -54,7 +54,7 @@
              <h2 class="zero">Scrumptious Stops</h2>
              <p class="zero">Google Maps & Route360 API trip planner</p>
           </li>
-          <li><img class="projimg top" src="code/thumb-scrumptious.png" alt="buildfit image" onclick="openModal();" class="hover-shadow"></li>
+          <li><img class="projimg top" src="code/thumb-scrumptious.png" alt="buildfit image" onclick="openModal(myModal);" class="hover-shadow"></li>
         </ul>
       </div>
       <div class="col-4 featthumbs">
@@ -78,7 +78,7 @@
     </section>
 
     <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <span class="close cursor" onclick="closeModal(myModal)">&times;</span>
       <div class="modal-content">
         <h2> Content coming soon! </h2>
       </div>
@@ -94,7 +94,6 @@
     var menu = document.querySelector('#menu');
     var main = document.querySelector('main');
     var drawer = document.querySelector('.nav');
-    console.log(menu);
     menu.addEventListener('click', function(e) {
       drawer.classList.toggle('open');
       e.stopPropagation();

@@ -1,30 +1,31 @@
-function openModal() {
+function openModal(modalName) {
 
-  document.getElementById('myModal').style.display = "block";
-  // modalName.style.display = "block";
+  // document.getElementById('myModal').style.display = "block";
+  modalName.style.display = "block";
 }
 
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-  // modalName.style.display = "none";
+function closeModal(modalName) {
+  // document.getElementById('myModal').style.display = "none";
+  modalName.style.display = "none";
 }
 
 var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, modalName) {
+  showSlides(slideIndex += n, modalName);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, modalName) {
+  showSlides(slideIndex = n, modalName);
 }
 
-function showSlides(n) {
+function showSlides(n, modalName) {
+
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
+  var slides = modalName.getElementsByClassName("mySlides");
+  var dots = modalName.getElementsByClassName("demo");
+  var captionText = modalName.getElementsByClassName("caption");
+
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
